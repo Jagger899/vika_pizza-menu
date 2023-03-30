@@ -1,0 +1,107 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #1A1A1A;
+}
+
+ol,
+li,
+p, 
+h1,
+h2 {
+  list-style: none;
+  color: #FDFDFC;
+  margin:0;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  /* position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 2; */
+}
+
+.pizza__title {
+  color: #F0BD34;
+}
+
+
+.pizza { 
+  border-right: 3px dotted #F0BD34;
+  /* border-style: dashed; */
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.pizza__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.pizza__list {
+  display: flex;
+  gap: 10px;
+}
+
+.pizza__item {
+  color: #F0BD34;
+}
+
+.pizza__item--descr {
+  color:#FDFDFC;
+}
+/* .pizza__list--price {
+  gap: 5px;
+} */
+.pizza__content-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.pizza__content-container--first {
+  gap: 5px;
+}
+
+.pizza__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pizza__content--med {
+  margin-top: -25px;
+}
+
+.pizza__img {
+  animation: 6s linear 6s normal none infinite running rot;
+  width: 300px;
+  height: 300px;
+  position: fixed;
+  right: -100px;
+  bottom: -100px;
+}
+
+@keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* .video__container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 0;
+} */
