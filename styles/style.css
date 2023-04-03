@@ -3,7 +3,7 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  background-color: #1A1A1A;
+  background-color: rgb(26, 26, 26);
   overflow:visible;
 }
 
@@ -22,6 +22,7 @@ img {
 .wrapper {
   display: flex;
   justify-content: space-between;
+  /* padding-top: 20px; */
   /* position: absolute;
   top: 0;
   bottom: 0;
@@ -36,10 +37,9 @@ img {
 
 
 .pizza { 
-  border-right: 3px dotted #F0BD34;
+  
   /* border-style: dashed; */
-  padding: 20px;
-  padding-top: 0;
+  padding: 20px 0 20px 20px;
   flex-grow: 1;
 }
 
@@ -51,7 +51,8 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: end;
-  padding-right: 10px;
+  /* border-right: 3px dashed #F0BD34; */
+  padding-right: 30px;
 }
 
 .pizza__list {
@@ -72,6 +73,8 @@ img {
 .pizza__content-container {
   display: flex;
   flex-direction: column;
+  border-right: 3px dashed #F0BD34;
+  padding-right: 20px;
 }
 
 .pizza__content-container--first {
@@ -135,3 +138,7 @@ img {
   bottom: 0;
   z-index: 0;
 } */
+
+.pizza__logo--transp {
+  opacity: 0;
+}
