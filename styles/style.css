@@ -4,7 +4,7 @@ body {
   margin: 0;
   box-sizing: border-box;
   background-color: rgb(26, 26, 26);
-  overflow:visible;
+  overflow:hidden;
 }
 
 ol,
@@ -92,10 +92,13 @@ img {
 }
 
 .pizza__img {
-  animation: 6s linear 6s normal none infinite running rot;
+  /* animation: 6s linear 6s normal none infinite running rot; */
+  animation-name: rot;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
   width: 400px;
   height: 400px;
-
 }
 
 .img__cont {
@@ -141,4 +144,8 @@ img {
 
 .pizza__logo--transp {
   opacity: 0;
+}
+
+.pizza__currency {
+  font-size: 10px;
 }
